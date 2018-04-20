@@ -1,0 +1,12 @@
+E:\Magnis\StockExchangeGUI\Extensibility\bin\Debug\Extensibility.dll
+E:\Magnis\StockExchangeGUI\Extensibility\bin\Debug\Extensibility.pdb
+E:\Magnis\StockExchangeGUI\Extensibility\obj\Debug\Extensibility.csprojResolveAssemblyReference.cache
+E:\Magnis\StockExchangeGUI\Extensibility\obj\Debug\Extensibility.csproj.CoreCompileInputs.cache
+E:\Magnis\StockExchangeGUI\Extensibility\obj\Debug\Extensibility.dll
+E:\Magnis\StockExchangeGUI\Extensibility\obj\Debug\Extensibility.pdb
+E:\Magnis\StockExchangeGUI\StockExchangeGUI\Extensibility\bin\Debug\Extensibility.dll
+E:\Magnis\StockExchangeGUI\StockExchangeGUI\Extensibility\bin\Debug\Extensibility.pdb
+E:\Magnis\StockExchangeGUI\StockExchangeGUI\Extensibility\obj\Debug\Extensibility.csprojResolveAssemblyReference.cache
+E:\Magnis\StockExchangeGUI\StockExchangeGUI\Extensibility\obj\Debug\Extensibility.csproj.CoreCompileInputs.cache
+E:\Magnis\StockExchangeGUI\StockExchangeGUI\Extensibility\obj\Debug\Extensibility.dll
+E:\Magnis\StockExchangeGUI\StockExchangeGUI\Extensibility\obj\Debug\Extensibility.pdb

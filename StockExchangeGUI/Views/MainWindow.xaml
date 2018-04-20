@@ -1,0 +1,60 @@
+﻿<Window x:Class="StockExchangeGUI.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:prism="http://prismlibrary.com/"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        Title="Magnis Real Time Stock Datas" Height="410" Width="450"
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Closing">
+            <i:InvokeCommandAction  Command="{Binding ExitCommand}" />
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <Grid>
+        <Label 
+            Content="{Binding ConnectionLabel}"
+            HorizontalAlignment="Left" 
+            Margin="11,16,0,0"
+            VerticalAlignment="Top" 
+            FontSize="16" 
+            FontFamily="Sitka Small"/>
+        <Button
+            Margin="222,60,60,0"
+            Height="36"
+            VerticalAlignment="Top"
+            Command="{Binding SubscribedToTheSymbolCommand}" 
+            IsEnabled="{Binding IsEnableSubscribedButton}"
+            FontWeight="Bold" 
+            Content="Subscribe to the symbol"/>
+        <ComboBox
+            Margin="10,60,277,0"
+            Height="36"
+            VerticalAlignment="Top"
+            ItemsSource="{Binding Path=SymbolsCollection}"
+            SelectedItem="{Binding SelectedSymbol}">
+        </ComboBox>
+        <StackPanel>
+            <DockPanel>
+                <ScrollViewer 
+                    Margin="1,125,35,40" 
+                    HorizontalScrollBarVisibility="Auto" 
+                    VerticalScrollBarVisibility="Auto">
+                    <DataGrid 
+                        IsReadOnly="True" 
+                        ItemsSource ="{Binding StockDatas}" 
+                        AutoGenerateColumns="False" 
+                        Width="Auto">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Binding="{Binding Symbol}" Width ="90" Header="Symbol"/>
+                            <DataGridTextColumn Binding="{Binding Price}" Width ="90" Header="Price"/>
+                            <DataGridTextColumn Binding="{Binding Volume}" Width ="90" Header="Volume"/>
+                            <DataGridTextColumn Binding="{Binding DateTime}" Width ="120" Header="DateTime"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </ScrollViewer>
+            </DockPanel>
+        </StackPanel>
+    </Grid>
+</Window>
